@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Deep shikha kumari</title>
+    <title>Portfolio | Deep Shikha Kumari</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <style>
-        /* Custom Styles to match the ECE aesthetic */
-        body { background-color: #0a0a0a; color: #e5e7eb; scroll-behavior: smooth; }
+        body { background-color: #0a0a0a; color: #e5e7eb; scroll-behavior: smooth; overflow-x: hidden; }
+        
         .glass-card { 
             background: rgba(255, 255, 255, 0.03); 
             border: 1px solid rgba(255, 255, 255, 0.1); 
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
+        
         .glass-card:hover { 
-            background: rgba(255, 255, 255, 0.07); 
+            background: rgba(255, 255, 255, 0.08); 
             border-color: #3b82f6;
-            transform: translateY(-5px);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
         }
+        
         .skill-tag {
             background: #1e1e1e;
             border: 1px solid #333;
@@ -26,16 +34,27 @@
             border-radius: 4px;
             font-size: 0.85rem;
             color: #9ca3af;
+            transition: all 0.3s ease;
         }
+
+        .skill-tag:hover {
+            border-color: #3b82f6;
+            color: white;
+            background: #2563eb22;
+        }
+
         .hero-gradient {
-            background: linear-gradient(to bottom, #0a0a0a, #111827);
+            background: radial-gradient(circle at center, #111827 0%, #0a0a0a 100%);
         }
+
+        /* Nav Blur Effect */
+        nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
     </style>
 </head>
 <body>
 
-    <nav class="fixed w-full z-50 px-6 py-4 bg-black/80 backdrop-blur-md border-b border-white/10 flex justify-between items-center">
-        <div class="font-bold tracking-tighter text-3xl">Deep shikha kumari<span class="text-blue-500"> | 3rd year ECE</span></div>
+    <nav class="fixed w-full z-50 px-6 py-4 border-b border-white/10 flex justify-between items-center bg-black/60">
+        <div class="font-bold tracking-tighter text-xl md:text-2xl">Deep Shikha Kumari<span class="text-blue-500"> | 3rd Year ECE</span></div>
         <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
             <a href="#about" class="hover:text-blue-500 transition">About</a>
             <a href="#projects" class="hover:text-blue-500 transition">Projects</a>
@@ -44,28 +63,31 @@
     </nav>
 
     <section class="hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">ENGINEERING WITH <br><span class="text-blue-500 uppercase">Pure Logic</span></h1>
-        <p class="text-gray-400 max-w-xl text-lg mb-8">Specializing in STM32 Embedded Systems, VLSI Design, and High-Performance Firmware.</p>
-        <div class="flex space-x-4">
-            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-bold transition">View Projects</a>
-            <a href="https://drive.google.com/uc?export=download&id=1ssWFwfAO2UE9yOuwOiMwLnC4XH3wAJwb" 
-   target="_blank" 
-   download="My_Resume"
-   class="border border-white/20 hover:bg-white/10 text-white px-8 py-3 rounded font-bold transition">
-   Download CV
-</a>
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">ENGINEERING WITH <br><span class="text-blue-500 uppercase">Pure Logic</span></h1>
+            <p class="text-gray-400 max-w-xl text-lg mb-8 mx-auto">Specializing in STM32 Embedded Systems, VLSI Design, and High-Performance Firmware.</p>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-bold transition transform hover:scale-105">View Projects</a>
+                <a href="https://drive.google.com/uc?export=download&id=1ssWFwfAO2UE9yOuwOiMwLnC4XH3wAJwb" 
+                   target="_blank" 
+                   class="border border-white/20 hover:bg-white/10 text-white px-8 py-3 rounded font-bold transition">
+                    Download CV
+                </a>
+            </div>
         </div>
     </section>
 
     <section id="about" class="py-24 px-6 max-w-5xl mx-auto">
-        <h2 class="text-blue-500 font-mono mb-4">01. ABOUT</h2>
-        <h3 class="text-3xl font-bold mb-6">Bridging Hardware and Software.</h3>
-        <p class="text-gray-400 leading-relaxed mb-10 text-lg">
-            I am a 3rd-year ECE student focused on Embedded Systems and Semiconductor Physics. 
-            I enjoy building low-level systems that require precision.
-        </p>
+        <div data-aos="fade-right">
+            <h2 class="text-blue-500 font-mono mb-4 text-lg">01. ABOUT</h2>
+            <h3 class="text-3xl md:text-4xl font-bold mb-6">Bridging Hardware and Software.</h3>
+            <p class="text-gray-400 leading-relaxed mb-10 text-lg">
+                I am a 3rd-year ECE student focused on Embedded Systems and Semiconductor Physics. 
+                I enjoy building low-level systems that require precision and robust logic.
+            </p>
+        </div>
         
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3" data-aos="zoom-in" data-aos-delay="200">
             <div class="skill-tag text-center">STM32 / ARM</div>
             <div class="skill-tag text-center">Embedded C</div>
             <div class="skill-tag text-center">Verilog</div>
@@ -77,34 +99,35 @@
             <div class="skill-tag text-center">FPGA</div>
             <div class="skill-tag text-center">LINUX</div>
             <div class="skill-tag text-center">System Design</div>
-            <div class="skill-tag text-center">HTML</div>
-            <div class="skill-tag text-center">JAVASCRIPT</div>
+            <div class="skill-tag text-center">HTML / JS</div>
         </div>
     </section>
 
     <section id="projects" class="py-24 px-6 bg-[#0c0c0c]">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-blue-500 font-mono mb-4 text-center">02. WORK</h2>
-            <h3 class="text-4xl font-bold mb-12 text-center">Featured Projects</h3>
+            <div data-aos="fade-up">
+                <h2 class="text-blue-500 font-mono mb-4 text-center">02. WORK</h2>
+                <h3 class="text-4xl font-bold mb-12 text-center">Featured Projects</h3>
+            </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="glass-card p-8 rounded-xl">
-                    <div class="text-blue-500 text-xs font-mono mb-2">MICROCONTROLLERS</div>
+                <div class="glass-card p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-500 text-xs font-mono mb-2 uppercase tracking-widest">Microcontrollers</div>
                     <h4 class="text-2xl font-bold mb-3">STM32 BCD Counter</h4>
-                    <p class="text-gray-400 mb-6">Built a high-precision BCD counter for 16MHz boards. Implemented bit-shift logic to handle overflow and decimal conversion.</p>
+                    <p class="text-gray-400 mb-6 text-sm md:text-base">Built a high-precision BCD counter for 16MHz boards. Implemented bit-shift logic to handle overflow and decimal conversion.</p>
                     <div class="flex space-x-3">
-                        <span class="text-xs text-gray-500">#STM32</span>
-                        <span class="text-xs text-gray-500">#BareMetal</span>
+                        <span class="text-xs text-blue-400 font-mono">#STM32</span>
+                        <span class="text-xs text-blue-400 font-mono">#BareMetal</span>
                     </div>
                 </div>
 
-                <div class="glass-card p-8 rounded-xl">
-                    <div class="text-blue-500 text-xs font-mono mb-2">FIRMWARE</div>
-                    <h4 class="text-2xl font-bold mb-3">1Hz Timer Interupts</h4>
-                    <p class="text-gray-400 mb-6">Precision clock generation using internal hardware timers without blocking the main CPU loop.</p>
+                <div class="glass-card p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-500 text-xs font-mono mb-2 uppercase tracking-widest">Firmware</div>
+                    <h4 class="text-2xl font-bold mb-3">1Hz Timer Interrupts</h4>
+                    <p class="text-gray-400 mb-6 text-sm md:text-base">Precision clock generation using internal hardware timers without blocking the main CPU loop.</p>
                     <div class="flex space-x-3">
-                        <span class="text-xs text-gray-500">#Interrupts</span>
-                        <span class="text-xs text-gray-500">#C++</span>
+                        <span class="text-xs text-blue-400 font-mono">#Interrupts</span>
+                        <span class="text-xs text-blue-400 font-mono">#C++</span>
                     </div>
                 </div>
             </div>
@@ -112,29 +135,39 @@
     </section>
 
     <section id="contact" class="py-24 px-6 text-center">
-        <h2 class="text- green-500 font-mono mb-6">03. CONTACT ME</h2>
-        <h3 class="text-4xl font-bold mb-10">Ready to Build Something?</h3>
-        <p class="text-gray-400 mb-10">Currently looking for internships in Embedded Systems and VLSI.</p>
-            Get In Touch
-        </a>
-        <div class="flex justify-center space-x-8 mt-12">
-    <a href="mailto:shikhasingh3680@gmail.com" class="text-2xl font-bold text-white border-b-2 border-blue-500 pb-2 hover:text-blue-400 hover:border-blue-400 transition">
-        <i class="fab fa-mailchimp"></i>
-    </a>
-    <a href="https://wa.me/918789838065" target="_blank" class="text-gray-400 hover:text-[#25D366] text-3xl transition-all duration-300">
-    <i class="fab fa-whatsapp"></i>
-</a>
-    <a href="www.linkedin.com/in/deepshikha-kumari-16a08b314/" target="_blank" class="text-gray-400 hover:text-blue-500 text-3xl transition-all duration-300">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/deepshikhakumari23" target="_blank" class="text-gray-400 hover:text-white text-3xl transition-all duration-300">
-        <i class="fab fa-github"></i>
-    </a>
-</div>
+        <div data-aos="zoom-out">
+            <h2 class="text-blue-500 font-mono mb-6 text-lg tracking-widest uppercase">03. Contact Me</h2>
+            <h3 class="text-4xl font-bold mb-4">Ready to Build Something?</h3>
+            <p class="text-gray-400 mb-10 max-w-md mx-auto">Currently looking for internships in Embedded Systems and VLSI. Feel free to reach out!</p>
+            
+            <div class="flex justify-center space-x-8 mt-12">
+                <a href="mailto:shikhasingh3680@gmail.com" title="Email" class="text-gray-400 hover:text-blue-500 text-3xl transition-all duration-300 transform hover:scale-125">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/918789838065" target="_blank" title="WhatsApp" class="text-gray-400 hover:text-[#25D366] text-3xl transition-all duration-300 transform hover:scale-125">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/deepshikha-kumari-16a08b314/" target="_blank" title="LinkedIn" class="text-gray-400 hover:text-[#0077b5] text-3xl transition-all duration-300 transform hover:scale-125">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/deepshikhakumari23" target="_blank" title="GitHub" class="text-gray-400 hover:text-white text-3xl transition-all duration-300 transform hover:scale-125">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-white/5">
-        <p class="text-gray-600 text-sm">© 2026 Designed & Built by [Deep shikha kumari]</p>
+    <footer class="py-10 text-center border-t border-white/5 bg-black">
+        <p class="text-gray-600 text-sm">© 2026 Designed & Built by Deep Shikha Kumari</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Animation only happens once
+            duration: 800, // Speed of animation
+            offset: 100 // Trigger point
+        });
+    </script>
 </body>
 </html>
