@@ -3,64 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Systems Portfolio</title>
+    <title>Portfolio | Embedded Systems Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0f172a; color: #f8fafc; }
-        .card { background-color: #1e293b; border: 1px solid #334155; }
-        .highlight { color: #38bdf8; }
+        /* Custom Styles to match the ECE aesthetic */
+        body { background-color: #0a0a0a; color: #e5e7eb; scroll-behavior: smooth; }
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.03); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover { 
+            background: rgba(255, 255, 255, 0.07); 
+            border-color: #3b82f6;
+            transform: translateY(-5px);
+        }
+        .skill-tag {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, #0a0a0a, #111827);
+        }
     </style>
 </head>
-<body class="font-sans">
+<body>
 
-    <nav class="p-6 border-b border-slate-800 flex justify-between items-center">
-        <h1 class="text-xl font-bold tracking-widest highlight">ST_DEVELOPER >_</h1>
-        <div class="space-x-6 text-sm">
-            <a href="#projects" class="hover:text-blue-400">Projects</a>
-            <a href="#skills" class="hover:text-blue-400">Skills</a>
+    <nav class="fixed w-full z-50 px-6 py-4 bg-black/80 backdrop-blur-md border-b border-white/10 flex justify-between items-center">
+        <div class="font-bold tracking-tighter text-xl">NAME<span class="text-blue-500"> | ECE</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+            <a href="#about" class="hover:text-blue-500 transition">About</a>
+            <a href="#projects" class="hover:text-blue-500 transition">Projects</a>
+            <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
         </div>
     </nav>
 
-    <header class="py-20 px-6 text-center">
-        <h2 class="text-5xl font-extrabold mb-4">Hi, I'm <span class="highlight">Deep shikha kumari</span></h2>
-        <p class="text-slate-400 max-w-2xl mx-auto text-lg">
-            Embedded Systems Engineer specializing in <span class="text-white">STM32 Microcontrollers</span>, 
-            Real-Time Operating Systems (FreeRTOS), and Bare-Metal C programming.
+    <section class="hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">ENGINEERING WITH <br><span class="text-blue-500 uppercase">Pure Logic</span></h1>
+        <p class="text-gray-400 max-w-xl text-lg mb-8">Specializing in STM32 Embedded Systems, VLSI Design, and High-Performance Firmware.</p>
+        <div class="flex space-x-4">
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-bold transition">View Projects</a>
+            <a href="#" class="border border-white/20 hover:bg-white/10 text-white px-8 py-3 rounded font-bold transition">Download CV</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-5xl mx-auto">
+        <h2 class="text-blue-500 font-mono mb-4">01. ABOUT</h2>
+        <h3 class="text-3xl font-bold mb-6">Bridging Hardware and Software.</h3>
+        <p class="text-gray-400 leading-relaxed mb-10 text-lg">
+            I am a 3rd-year ECE student focused on Embedded Systems and Semiconductor Physics. 
+            I enjoy building low-level systems that require precision and zero noise.
         </p>
-    </header>
-
-    <section id="skills" class="max-w-4xl mx-auto px-6 py-10">
-        <h3 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">Technical Stack</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="card p-4 rounded text-center">C / C++</div>
-            <div class="card p-4 rounded text-center">STM32 / ARM</div>
-            <div class="card p-4 rounded text-center">I2C / SPI / UART</div>
-            <div class="card p-4 rounded text-center">FreeRTOS</div>
-        </div>
-    </section>
-
-    <section id="projects" class="max-w-4xl mx-auto px-6 py-10">
-        <h3 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">Featured Projects</h3>
         
-        <div class="space-y-6">
-            <div class="card p-6 rounded-lg">
-                <h4 class="text-xl font-bold highlight mb-2">STM32 BCD Counter</h4>
-                <p class="text-slate-400 mb-4">Developed a custom BCD counter that handles bit-shifting logic (adding 6 after 9 bits) for accurate numeric displays.</p>
-                <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">Embedded C</span>
-                <span class="text-xs bg-slate-700 text-slate-200 px-2 py-1 rounded ml-2">STM32CubeIDE</span>
-            </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div class="skill-tag text-center">STM32 / ARM</div>
+            <div class="skill-tag text-center">Embedded C</div>
+            <div class="skill-tag text-center">Verilog</div>
+            <div class="skill-tag text-center">RTOS</div>
+            <div class="skill-tag text-center">I2C / SPI / UART</div>
+            <div class="skill-tag text-center">VLSI Design</div>
+            <div class="skill-tag text-center">Python</div>
+            <div class="skill-tag text-center">Git / DevOps</div>
+        </div>
+    </section>
 
-            <div class="card p-6 rounded-lg">
-                <h4 class="text-xl font-bold highlight mb-2">1Hz LED Blinker (Timer Interrupts)</h4>
-                <p class="text-slate-400 mb-4">Precision timing project using internal hardware timers at 16MHz frequency to achieve a perfect 1Hz pulse without CPU blocking.</p>
-                <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">Hardware Timers</span>
+    <section id="projects" class="py-24 px-6 bg-[#0c0c0c]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-blue-500 font-mono mb-4 text-center">02. WORK</h2>
+            <h3 class="text-4xl font-bold mb-12 text-center">Featured Projects</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-xl">
+                    <div class="text-blue-500 text-xs font-mono mb-2">MICROCONTROLLERS</div>
+                    <h4 class="text-2xl font-bold mb-3">STM32 BCD Counter</h4>
+                    <p class="text-gray-400 mb-6">Built a high-precision BCD counter for 16MHz boards. Implemented bit-shift logic to handle overflow and decimal conversion.</p>
+                    <div class="flex space-x-3">
+                        <span class="text-xs text-gray-500">#STM32</span>
+                        <span class="text-xs text-gray-500">#BareMetal</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-xl">
+                    <div class="text-blue-500 text-xs font-mono mb-2">FIRMWARE</div>
+                    <h4 class="text-2xl font-bold mb-3">1Hz Timer Interupts</h4>
+                    <p class="text-gray-400 mb-6">Precision clock generation using internal hardware timers without blocking the main CPU loop.</p>
+                    <div class="flex space-x-3">
+                        <span class="text-xs text-gray-500">#Interrupts</span>
+                        <span class="text-xs text-gray-500">#C++</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="text-center py-10 border-t border-slate-800 mt-20">
-        <p class="text-slate-500 text-sm">© 2026 | Built with VS Code & Vercel</p>
+    <section id="contact" class="py-24 px-6 text-center">
+        <h2 class="text-blue-500 font-mono mb-4">03. CONNECT</h2>
+        <h3 class="text-4xl font-bold mb-8">Ready to Build Something?</h3>
+        <p class="text-gray-400 mb-10">Currently looking for internships in Embedded Systems and VLSI.</p>
+        <a href="mailto:your-email@example.com" class="text-2xl font-bold text-white border-b-2 border-blue-500 pb-2 hover:text-blue-400 hover:border-blue-400 transition">
+            Get In Touch
+        </a>
+    </section>
+
+    <footer class="py-10 text-center border-t border-white/5">
+        <p class="text-gray-600 text-sm">© 2026 Designed & Built by [Your Name]</p>
     </footer>
 
 </body>
-</html>>
+</html>
