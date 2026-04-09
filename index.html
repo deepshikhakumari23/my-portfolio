@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Systems Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .card { background-color: #1e293b; border: 1px solid #334155; }
+        .highlight { color: #38bdf8; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="p-6 border-b border-slate-800 flex justify-between items-center">
+        <h1 class="text-xl font-bold tracking-widest highlight">ST_DEVELOPER >_</h1>
+        <div class="space-x-6 text-sm">
+            <a href="#projects" class="hover:text-blue-400">Projects</a>
+            <a href="#skills" class="hover:text-blue-400">Skills</a>
+        </div>
+    </nav>
+
+    <header class="py-20 px-6 text-center">
+        <h2 class="text-5xl font-extrabold mb-4">Hi, I'm <span class="highlight">Deep shikha kumari</span></h2>
+        <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+            Embedded Systems Engineer specializing in <span class="text-white">STM32 Microcontrollers</span>, 
+            Real-Time Operating Systems (FreeRTOS), and Bare-Metal C programming.
+        </p>
+    </header>
+
+    <section id="skills" class="max-w-4xl mx-auto px-6 py-10">
+        <h3 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">Technical Stack</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="card p-4 rounded text-center">C / C++</div>
+            <div class="card p-4 rounded text-center">STM32 / ARM</div>
+            <div class="card p-4 rounded text-center">I2C / SPI / UART</div>
+            <div class="card p-4 rounded text-center">FreeRTOS</div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-4xl mx-auto px-6 py-10">
+        <h3 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">Featured Projects</h3>
+        
+        <div class="space-y-6">
+            <div class="card p-6 rounded-lg">
+                <h4 class="text-xl font-bold highlight mb-2">STM32 BCD Counter</h4>
+                <p class="text-slate-400 mb-4">Developed a custom BCD counter that handles bit-shifting logic (adding 6 after 9 bits) for accurate numeric displays.</p>
+                <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">Embedded C</span>
+                <span class="text-xs bg-slate-700 text-slate-200 px-2 py-1 rounded ml-2">STM32CubeIDE</span>
+            </div>
+
+            <div class="card p-6 rounded-lg">
+                <h4 class="text-xl font-bold highlight mb-2">1Hz LED Blinker (Timer Interrupts)</h4>
+                <p class="text-slate-400 mb-4">Precision timing project using internal hardware timers at 16MHz frequency to achieve a perfect 1Hz pulse without CPU blocking.</p>
+                <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">Hardware Timers</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-10 border-t border-slate-800 mt-20">
+        <p class="text-slate-500 text-sm">© 2026 | Built with VS Code & Vercel</p>
+    </footer>
+
+</body>
+</html>>
