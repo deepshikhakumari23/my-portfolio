@@ -78,57 +78,63 @@
     </section>
 
    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-        
-        <div data-aos="fade-right" data-aos-duration="1000">
-            <h2 class="text-blue-500 font-mono mb-4 text-lg">01. ABOUT ME</h2>
-            <h3 class="text-3xl md:text-4xl font-bold mb-6 text-white">Engineering the Future of Hardware.</h3>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
             
-            <div class="space-y-4 text-gray-400 text-lg leading-relaxed">
-                <p>
-                    Hello! I'm <span class="text-white font-semibold">Deep Shikha Kumari</span>, a 3rd-year Electronics and Communication Engineering student with a passion for building efficient, low-level systems. 
-                </p>
-                <p>
-                    My journey started with a fascination for how code interacts with physical circuits. Today, I specialize in <span class="text-blue-400">STM32 Microcontrollers</span> and <span class="text-blue-400">Embedded C</span>, focusing on writing firmware that is as close to the metal as possible.
-                </p>
-                <p>
-                    When I'm not debugging timers or SPI protocols, I'm exploring VLSI design and Semiconductor Physics, aiming to bridge the gap between high-level logic and high-performance hardware.
-                </p>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="text-blue-500 font-mono mb-4 text-lg">01. ABOUT ME</h2>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-white">Engineering the Future of Hardware.</h3>
+                
+                <div class="space-y-4 text-gray-400 text-lg leading-relaxed">
+                    <p>
+                        Hello! I'm <span class="text-white font-semibold">Deep Shikha Kumari</span>, a 3rd-year Electronics and Communication Engineering student with a passion for building efficient, low-level systems. 
+                    </p>
+                    <p>
+                        My journey started with a fascination for how code interacts with physical circuits. Today, I specialize in <span class="text-blue-400">STM32 Microcontrollers</span> and <span class="text-blue-400">Embedded C</span>, focusing on writing firmware that is as close to the metal as possible.
+                    </p>
+                    <p>
+                        When I'm not debugging timers or SPI protocols, I'm exploring VLSI design and Semiconductor Physics, aiming to bridge the gap between high-level logic and high-performance hardware.
+                    </p>
+                </div>
+
+                <div class="mt-8 grid grid-cols-2 gap-2 text-sm font-mono text-blue-400">
+                    <div>▹ STM32 / ARM</div>
+                    <div>▹ Embedded C</div>
+                    <div>▹ Verilog HDL</div>
+                    <div>▹ FreeRTOS</div>
+                </div>
             </div>
 
-            <div class="mt-8 grid grid-cols-2 gap-2 text-sm font-mono text-blue-400">
-                <div>▹ STM32 / ARM</div>
-                <div>▹ Embedded C</div>
-                <div>▹ Verilog HDL</div>
-                <div>▹ FreeRTOS</div>
+            <div class="relative group mx-auto md:mx-0" data-aos="fade-left" data-aos-duration="1000">
+                <div class="absolute -inset-4 border-2 border-blue-500/30 rounded-xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+                
+                <div class="relative overflow-hidden rounded-xl bg-slate-800 aspect-[2/3] w-60 md:w-72 shadow-2xl cursor-pointer" onclick="this.classList.toggle('is-grayscale')">
+                    
+                    <img src="profile.jpeg" 
+                         alt="Deep Shikha Kumari" 
+                         class="object-cover w-full h-full scale-105 group-hover:scale-100 transition-all duration-700">
+                    
+                    <div class="absolute inset-x-0 bottom-0 py-2 bg-black/60 text-xs text-blue-400 font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        CLICK ME
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="relative group mx-auto md:mx-0" data-aos="fade-left" data-aos-duration="1000">
-            <div class="absolute -inset-4 border-2 border-blue-500/30 rounded-xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
-            
-            <div class="relative overflow-hidden rounded-xl bg-slate-800 aspect-square w-64 md:w-80 shadow-2xl">
-                <img src="profile.jpeg" 
-                     alt="Deep Shikha Kumari" 
-                     class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700 scale-110 hover:scale-100">
-            </div>
+        <div class="mt-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" data-aos="fade-up">
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-microchip mr-2 text-blue-500"></i> STM32 / ARM</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-code mr-2 text-blue-500"></i> Embedded C</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-project-diagram mr-2 text-blue-500"></i> Verilog</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-clock mr-2 text-blue-500"></i> RTOS</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-network-wired mr-2 text-blue-500"></i> I2C / SPI / UART</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-memory mr-2 text-blue-500"></i> VLSI Design</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fab fa-python mr-2 text-blue-500"></i> Python</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-infinity mr-2 text-blue-500"></i> Git / DevOps</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-vial mr-2 text-blue-500"></i> FPGA</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fab fa-linux mr-2 text-blue-500"></i> LINUX</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-cogs mr-2 text-blue-500"></i> System Design</div>
+            <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fab fa-html5 mr-2 text-blue-500"></i> HTML / JS</div>
         </div>
-    </div>
-
-    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" data-aos="fade-up">
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-microchip mr-2 text-blue-500"></i> STM32 / ARM</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-code mr-2 text-blue-500"></i> Embedded C</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-project-diagram mr-2 text-blue-500"></i> Verilog</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-clock mr-2 text-blue-500"></i> RTOS</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-network-wired mr-2 text-blue-500"></i> I2C / SPI / UART</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-memory mr-2 text-blue-500"></i> VLSI Design</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fab fa-python mr-2 text-blue-500"></i> Python</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-infinity mr-2 text-blue-500"></i> Git / DevOps</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-vial mr-2 text-blue-500"></i> FPGA</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fab fa-linux mr-2 text-blue-500"></i> LINUX</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fas fa-cogs mr-2 text-blue-500"></i> System Design</div>
-        <div class="skill-tag text-center hover:scale-105 transition-all"><i class="fab fa-html5 mr-2 text-blue-500"></i> HTML / JS</div>
-    </div>
+    </section>
 </section>
     </section>
 
