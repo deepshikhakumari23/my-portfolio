@@ -140,35 +140,73 @@
     </section>
 
     <section id="projects" class="py-24 px-6 bg-[#0c0c0c]">
-        <div class="max-w-6xl mx-auto">
-            <div data-aos="fade-up">
-                <h2 class="text-blue-500 font-mono mb-4 text-center">02. WORK</h2>
-                <h3 class="text-4xl font-bold mb-12 text-center">Featured Projects</h3>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="glass-card p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-blue-500 text-xs font-mono mb-2 uppercase tracking-widest">Microcontrollers</div>
-                    <h4 class="text-2xl font-bold mb-3">STM32 BCD Counter</h4>
-                    <p class="text-gray-400 mb-6 text-sm md:text-base">Built a high-precision BCD counter for 16MHz boards. Implemented bit-shift logic to handle overflow and decimal conversion.</p>
-                    <div class="flex space-x-3">
-                        <span class="text-xs text-blue-400 font-mono">#STM32</span>
-                        <span class="text-xs text-blue-400 font-mono">#BareMetal</span>
-                    </div>
-                </div>
-
-                <div class="glass-card p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-blue-500 text-xs font-mono mb-2 uppercase tracking-widest">Firmware</div>
-                    <h4 class="text-2xl font-bold mb-3">1Hz Timer Interrupts</h4>
-                    <p class="text-gray-400 mb-6 text-sm md:text-base">Precision clock generation using internal hardware timers without blocking the main CPU loop.</p>
-                    <div class="flex space-x-3">
-                        <span class="text-xs text-blue-400 font-mono">#Interrupts</span>
-                        <span class="text-xs text-blue-400 font-mono">#C++</span>
-                    </div>
-                </div>
-            </div>
+    <div class="max-w-6xl mx-auto">
+        <div data-aos="fade-up">
+            <h2 class="text-blue-500 font-mono mb-4 text-center text-lg">02. FEATURED WORK</h2>
+            <h3 class="text-4xl font-bold mb-12 text-center">Engineering Portfolio</h3>
         </div>
-    </section>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass-card p-8 rounded-xl flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-blue-500 text-xs font-mono uppercase tracking-widest">Data Science & AI</div>
+                        <a href="https://github.com/git-clone-adi/-DRONA-AD" target="_blank" class="text-gray-400 hover:text-white transition text-xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">🛡️ MiniEklavya (DRONA)</h4>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        A full-stack data pipeline simulating 200,000+ engagement records. Features an AI-driven segmentation model using <strong>K-Means Clustering</strong> to identify "At-Risk" students.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">Python</span>
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">Scikit-Learn</span>
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">SQLite3</span>
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">Streamlit</span>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-xl flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-blue-500 text-xs font-mono uppercase tracking-widest">Hardware Verification</div>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">⚙️ VerifierVerilog</h4>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        An automated verification engine that compiles and runs Verilog designs using **Icarus Verilog**. Features custom Python sub-processes for syntax checking and simulation timeout management.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">Verilog</span>
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">Python</span>
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">Shell Scripting</span>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-xl flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                    <div class="text-blue-500 text-xs font-mono mb-2 uppercase tracking-widest">Embedded & Semiconductors</div>
+                    <h4 class="text-2xl font-bold mb-3">STM32 & FinFET Design</h4>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        Real-time battery monitoring systems using STM32/UART [cite: 1, 16] alongside research on AI-driven <strong>Adaptive FinFET doping</strong> for space-grade processors[cite: 21, 26].
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">Embedded C</span>
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">ARM Architecture</span>
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">VLSI Design</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <section id="contact" class="py-24 px-6 text-center">
         <div data-aos="zoom-out">
